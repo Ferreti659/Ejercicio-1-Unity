@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour
 {
+    
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
     private int puertaPasada;
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         if(puertaPasada==1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
         }
     }
 
@@ -48,6 +51,7 @@ public class GameManager : MonoBehaviour
         if (puertaBajada == 1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            
         }
     }
 }

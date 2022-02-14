@@ -8,9 +8,11 @@ public class CharacterController : MonoBehaviour
     public float velocidad;
     private bool mirandoDerecha = true;
     public float fuerzaSalto;
+    public float CanMove;
     private BoxCollider2D boxCollider;
     public LayerMask capaSuelo;
     private Animator animator;
+
 
     /*public bool isGrounded;
     public bool canJump = true;
@@ -21,12 +23,13 @@ public class CharacterController : MonoBehaviour
         rigibody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        ProcesarMovimiento();
+        //ProcesarMovimiento();
 
         /*isGrounded = Physics.OverlapBox(new Vector2(gameObject.transform.x, gameObject.transform.y - 0.5f),
                 new Vector2(0.9f, 0, 4f), 0f, groundMask);
@@ -38,6 +41,22 @@ public class CharacterController : MonoBehaviour
         ProcesarSalto();
     }
 
+    void FixedUpdate()
+    {
+        if (CanMove == true)
+        {
+            ProcesarMovimiento();
+        }
+        else
+        {
+            CanMove = false;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo == true)
+        {
+            JumpCharge++;
+        }
+    }
 
     bool EstaEnSuelo()
     {
@@ -50,10 +69,72 @@ public class CharacterController : MonoBehaviour
 
     void ProcesarSalto()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && EstaEnSuelo())
+
+        fuerzaSalto = 0;
+
+
+        if (Input.GetKey(KeyCode.space) && JumpCharge <= 75 && EstaEnSuelo)
         {
-            /*fuerzaSalto += 0.1f;*/
-            rigibody.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            JumpCharge++;
+        }
+
+        if (CanMove == true)
+        {
+            ProcesarMovimiento();
+        }
+
+        if (EstaEnSuelo = Physics2D.overlapCircle(feetPos.position, checkRadius, whatIsGround))
+        {
+            IsJumping = false;
+        }
+        else
+        {
+            IsJumping = true;
+        }
+
+        if(IsJumping == true || Input.GetKey(KeyCode.Space))
+        {
+            CanMove = false;
+        }
+        else
+        {
+            CanMove = true;
+        }
+
+        if (EstaEnSuelo == true && Input.GetKeyUp(KeyCode.space && NormalJump == true))
+        {
+            rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
+            if (isJumping == false)
+            {
+                JumpCharge = 1;
+            }
+            IsJumping = true;
+            NormalJump = true;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            NormalJump = false;
+        }
+        else
+        {
+            NormalJump = true;
+        }
+
+        if (EstaEnSuelo == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.space))
+        {
+            rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
+            JumpCharge = 1;
+            IsJumping = true;
+
+        }
+
+        if (EstaEnSuelo == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.space))
+        {
+            rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
+            JumpCharge = 1;
+            IsJumping = true;
+
         }
     }
 
