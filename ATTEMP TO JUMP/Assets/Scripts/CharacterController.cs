@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour
     public float velocidad;
     private bool mirandoDerecha = true;
     public float fuerzaSalto;
-    public float CanMove;
+    public bool CanMove = true;
     private BoxCollider2D boxCollider;
     public LayerMask capaSuelo;
     private Animator animator;
