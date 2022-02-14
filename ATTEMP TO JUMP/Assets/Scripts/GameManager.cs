@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
+    private int puertaPasada;
+    private int puertaBajada;
+
 
     public void SumarPuntos(int puntosASumar)
     {
@@ -14,16 +17,37 @@ public class GameManager : MonoBehaviour
         Debug.Log(puntosTotales);
     }
 
-    private void update()
+    private void Update()
     {
-        AllCoinsCollected();
+        puertasiguientenivel();
+        puertanivelanterior();
     }
 
-    public void AllCoinsCollected()
+    public void puertasubida(int puertaCruzada)
     {
-        if(puntosTotales==1)
+        puertaPasada += puertaCruzada;
+        Debug.Log(puertaPasada);
+    }
+
+    public void puertabajada(int bajar)
+    {
+        puertaBajada += bajar;
+        Debug.Log(puertaBajada);
+    }
+
+    public void puertasiguientenivel()
+    {
+        if(puertaPasada==1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    public void puertanivelanterior()
+    {
+        if (puertaBajada == 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }
