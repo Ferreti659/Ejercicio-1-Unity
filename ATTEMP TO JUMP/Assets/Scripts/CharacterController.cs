@@ -12,6 +12,9 @@ public class CharacterController : MonoBehaviour
     private BoxCollider2D boxCollider;
     public LayerMask capaSuelo;
     private Animator animator;
+    private float JumpCharge;
+    private bool IsJumping = false;
+    private bool NormalJump = true;
 
 
     /*public bool isGrounded;
@@ -52,7 +55,7 @@ public class CharacterController : MonoBehaviour
             CanMove = false;
         }
 
-        if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo == true)
+        if (Input.GetKey("space") && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
         }
@@ -70,10 +73,10 @@ public class CharacterController : MonoBehaviour
     void ProcesarSalto()
     {
 
-        fuerzaSalto = 0;
+        
 
 
-        if (Input.GetKey(KeyCode.space) && JumpCharge <= 75 && EstaEnSuelo)
+        if (Input.GetKey("space") && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
         }
@@ -83,7 +86,7 @@ public class CharacterController : MonoBehaviour
             ProcesarMovimiento();
         }
 
-        if (EstaEnSuelo = Physics2D.overlapCircle(feetPos.position, checkRadius, whatIsGround))
+        if (EstaEnSuelo() == true)
         {
             IsJumping = false;
         }
@@ -92,7 +95,7 @@ public class CharacterController : MonoBehaviour
             IsJumping = true;
         }
 
-        if(IsJumping == true || Input.GetKey(KeyCode.Space))
+        if(IsJumping == true || Input.GetKey("space"))
         {
             CanMove = false;
         }
@@ -101,40 +104,42 @@ public class CharacterController : MonoBehaviour
             CanMove = true;
         }
 
-        if (EstaEnSuelo == true && Input.GetKeyUp(KeyCode.space && NormalJump == true))
+        if (EstaEnSuelo() == true && Input.GetKeyUp("space") && NormalJump == true)
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
-            if (isJumping == false)
+            if (IsJumping == false)
             {
                 JumpCharge = 1;
             }
             IsJumping = true;
             NormalJump = true;
         }
-
+        Debug.log("0");
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
             NormalJump = false;
+            Debug.log("1");
         }
         else
         {
             NormalJump = true;
+            Debug.log("2");
         }
 
-        if (EstaEnSuelo == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.space))
+        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey("space"))
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             JumpCharge = 1;
             IsJumping = true;
-
+            Debug.log("3");
         }
 
-        if (EstaEnSuelo == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.space))
+        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey("space"))
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             JumpCharge = 1;
             IsJumping = true;
-
+            Debug.log("4");
         }
     }
 
