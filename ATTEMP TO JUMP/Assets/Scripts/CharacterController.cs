@@ -34,13 +34,7 @@ public class CharacterController : MonoBehaviour
     {
         //ProcesarMovimiento();
 
-        /*isGrounded = Physics.OverlapBox(new Vector2(gameObject.transform.x, gameObject.transform.y - 0.5f),
-                new Vector2(0.9f, 0, 4f), 0f, groundMask);
 
-        if (Input.GetKey("space") && isGrounded && canJump)
-        {
-            jumpValue += 0.1f;
-        }*/
         ProcesarSalto();
     }
 
@@ -55,7 +49,7 @@ public class CharacterController : MonoBehaviour
             CanMove = false;
         }
 
-        if (Input.GetKey("space") && JumpCharge <= 75 && EstaEnSuelo() == true)
+        if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
         }
@@ -76,7 +70,7 @@ public class CharacterController : MonoBehaviour
         
 
 
-        if (Input.GetKey("space") && JumpCharge <= 75 && EstaEnSuelo() == true)
+        if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
         }
@@ -95,7 +89,7 @@ public class CharacterController : MonoBehaviour
             IsJumping = true;
         }
 
-        if(IsJumping == true || Input.GetKey("space"))
+        if(Input.GetKey(KeyCode.Space) )
         {
             CanMove = false;
         }
@@ -104,7 +98,7 @@ public class CharacterController : MonoBehaviour
             CanMove = true;
         }
 
-        if (EstaEnSuelo() == true && Input.GetKeyUp("space") && NormalJump == true)
+        if (EstaEnSuelo() == true && Input.GetKeyUp(KeyCode.Space) && NormalJump == true)
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             if (IsJumping == false)
@@ -114,32 +108,29 @@ public class CharacterController : MonoBehaviour
             IsJumping = true;
             NormalJump = true;
         }
-        Debug.log("0");
+        
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
             NormalJump = false;
-            Debug.log("1");
         }
         else
         {
             NormalJump = true;
-            Debug.log("2");
         }
 
-        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey("space"))
+        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.Space))
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             JumpCharge = 1;
             IsJumping = true;
-            Debug.log("3");
+
         }
 
-        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey("space"))
+        if (EstaEnSuelo() == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.Space))
         {
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             JumpCharge = 1;
             IsJumping = true;
-            Debug.log("4");
         }
     }
 
