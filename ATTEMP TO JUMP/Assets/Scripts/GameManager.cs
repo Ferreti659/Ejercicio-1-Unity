@@ -54,4 +54,24 @@ public class GameManager : MonoBehaviour
             
         }
     }
+
+    public void Juego()
+    {
+        SceneManager.LoadScene("lvl1");
+    }
+
+    public void Opciones()
+    {
+        SceneManager.LoadScene("Opciones");
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
+
+    public void volvermainmenu()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }

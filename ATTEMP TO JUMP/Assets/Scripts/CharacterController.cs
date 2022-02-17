@@ -16,6 +16,7 @@ public class CharacterController : MonoBehaviour
     private bool IsJumping = false;
     private bool NormalJump = true;
 
+    
 
     /*public bool isGrounded;
     public bool canJump = true;
@@ -52,6 +53,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
+            Debug.Log(JumpCharge);
         }
     }
 
@@ -62,18 +64,21 @@ public class CharacterController : MonoBehaviour
                         0f, Vector2.down, 0.2f, capaSuelo);
 
         return raycastHit.collider != null;
+
     }
 
     void ProcesarSalto()
     {
 
-        
+        animator.SetBool("espacio", true);
 
 
         if (Input.GetKey(KeyCode.Space) && JumpCharge <= 75 && EstaEnSuelo() == true)
         {
             JumpCharge++;
         }
+
+
 
         if (CanMove == true)
         {
@@ -83,19 +88,54 @@ public class CharacterController : MonoBehaviour
         if (EstaEnSuelo() == true)
         {
             IsJumping = false;
+            
         }
         else
         {
             IsJumping = true;
+            
+            
         }
 
-        if(Input.GetKey(KeyCode.Space) )
+        if (EstaEnSuelo() == true)
+        {
+            animator.SetBool("isGrounded", true);
+
+        }
+        else
+        {
+            animator.SetBool("isGrounded", false);
+        }
+
+        if (Input.GetKey(KeyCode.Space) )
         {
             CanMove = false;
         }
         else
         {
             CanMove = true;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            bool espacio = true;
+            
+            Debug.Log(espacio);
+        }
+        else
+        {
+            bool espacio = false;
+            animator.SetBool("espacio", false);
+            Debug.Log(espacio);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            NormalJump = false;
+        }
+        else
+        {
+            NormalJump = true;
         }
 
         if (EstaEnSuelo() == true && Input.GetKeyUp(KeyCode.Space) && NormalJump == true)
@@ -107,15 +147,7 @@ public class CharacterController : MonoBehaviour
             }
             IsJumping = true;
             NormalJump = true;
-        }
-        
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            NormalJump = false;
-        }
-        else
-        {
-            NormalJump = true;
+            animator.SetFloat("jumpVelocity", rigibody.velocity.y);
         }
 
         if (EstaEnSuelo() == true && Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.Space))
@@ -128,6 +160,7 @@ public class CharacterController : MonoBehaviour
 
         if (EstaEnSuelo() == true && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.Space))
         {
+            
             rigibody.velocity = Vector2.up * fuerzaSalto * JumpCharge / 35;
             JumpCharge = 1;
             IsJumping = true;
@@ -144,7 +177,7 @@ public class CharacterController : MonoBehaviour
             rigibody.velocity = new Vector2(inputMovimiento * velocidad, rigibody.velocity.y);
             GestionarOrientacion(inputMovimiento);
 
-            if (inputMovimiento != 0f)
+            if (inputMovimiento != 0)
             {
                 animator.SetBool("isrunning", true);
             }

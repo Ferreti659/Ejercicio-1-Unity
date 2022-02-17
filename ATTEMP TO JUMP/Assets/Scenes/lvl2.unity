@@ -14848,7 +14848,7 @@ GameObject:
   - component: {fileID: 1724987123}
   - component: {fileID: 1724987122}
   m_Layer: 0
-  m_Name: Personaje
+  m_Name: Personajekuromi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14864,7 +14864,7 @@ Animator:
   m_GameObject: {fileID: 1724987121}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dcd192d511d5ffb42be78a1cec90b12d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 98809333547f3d34085043740e831000, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14887,6 +14887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 12
   fuerzaSalto: 14.3
+  CanMove: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 256
