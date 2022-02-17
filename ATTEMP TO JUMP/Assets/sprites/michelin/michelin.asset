@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d5c6eff1e0b4454bb030ea2dd806a7c, type: 3}
-  m_Name: nuevoPersonaje
+  m_Name: michelin
   m_EditorClassIdentifier: 
-  personajeJugable: {fileID: 1337346839886095458, guid: 1b7a8013de9ae2641bfb6772ecee8d40, type: 3}
+  personajeJugable: {fileID: 3796966033149974173, guid: 62e3b985114cdc643997e0e0408e83d3, type: 3}
   imagen: {fileID: 21300000, guid: d5f3ae37430d0bb47b9cfd788ca4a8b8, type: 3}
-  nombre: 
+  nombre: michelin
