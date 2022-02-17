@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private int puntosTotales;
     private int puertaPasada;
     private int puertaBajada;
+    public List<personajes> personajes;
+    public static GameManager instance;
 
 
     public void SumarPuntos(int puntosASumar)
@@ -79,4 +81,18 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("menu");
     }
+
+    private void Awake()
+    {
+        if(GameManager.instance == null)
+        {
+            GameManager.instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }

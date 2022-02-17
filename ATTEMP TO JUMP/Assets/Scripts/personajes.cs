@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class personajes : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "nuevoPersonaje", menuName = "Personaje")]
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class personajes : ScriptableObject
+{
+    public GameObject personajeJugable;
+
+    public Sprite imagen;
+
+    public string nombre;
 }
