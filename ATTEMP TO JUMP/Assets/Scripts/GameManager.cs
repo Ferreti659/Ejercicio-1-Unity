@@ -55,7 +55,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Juego()
+    public void seleccionpersonaje()
+    {
+        SceneManager.LoadScene("seleccionpersonaje");
+    }
+
+    public void jugar()
     {
         SceneManager.LoadScene("lvl1");
     }

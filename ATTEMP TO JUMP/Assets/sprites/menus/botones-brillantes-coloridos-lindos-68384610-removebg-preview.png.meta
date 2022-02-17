@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: ca38952f06d42f44b9c781cf0ec8d3e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4024105041471317916
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_0
+  - first:
+      213: -7285316057156595171
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_1
+  - first:
+      213: 2428045348545910108
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_2
+  - first:
+      213: -3682544097868572593
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_3
+  - first:
+      213: -5979950293423714664
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_4
+  - first:
+      213: 6365523695600796711
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_5
+  - first:
+      213: -2969599189815345834
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_6
+  - first:
+      213: 3102559656127819241
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_7
+  - first:
+      213: 5657721856203422633
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_8
+  - first:
+      213: -6558728877740505033
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_9
+  - first:
+      213: 1269709640519623392
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_10
+  - first:
+      213: 686171813125790303
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_11
+  - first:
+      213: -3266650464108762206
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_12
+  - first:
+      213: 6075935885687480104
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_13
+  - first:
+      213: 4355440741011401816
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_14
+  - first:
+      213: -221324547270841156
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_15
+  - first:
+      213: -1590914516157738409
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_16
+  - first:
+      213: -3779609142318355032
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_17
+  - first:
+      213: 232349895492625470
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_18
+  - first:
+      213: -143426212890020272
+    second: botones-brillantes-coloridos-lindos-68384610-removebg-preview_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 421
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97a1cfe63e78d730800000000000000
+      internalID: 4024105041471317916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 425
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d125bb035ab55ea90800000000000000
+      internalID: -7285316057156595171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 424
+        width: 186
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c555e92516622b120800000000000000
+      internalID: 2428045348545910108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 427
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4815d867a9f4ecc0800000000000000
+      internalID: -3682544097868572593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 322
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e8cf924e2f20da0800000000000000
+      internalID: -5979950293423714664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 326
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7240e9d3312e65850800000000000000
+      internalID: 6365523695600796711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 325
+        width: 186
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65db4cd354dd9c6d0800000000000000
+      internalID: -2969599189815345834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 328
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ede4f5b1918e0b20800000000000000
+      internalID: 3102559656127819241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 222
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abf7f46d04448e40800000000000000
+      internalID: 5657721856203422633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 226
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7384e28d5d6baf4a0800000000000000
+      internalID: -6558728877740505033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 225
+        width: 186
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2af0bd03aee9110800000000000000
+      internalID: 1269709640519623392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 228
+        width: 61
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a9f38e0a5c58900800000000000000
+      internalID: 686171813125790303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 123
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abae69d5b68aa2d0800000000000000
+      internalID: -3266650464108762206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 127
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f53701f7f025450800000000000000
+      internalID: 6075935885687480104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 126
+        width: 186
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85caf302742a17c30800000000000000
+      internalID: 4355440741011401816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 129
+        width: 61
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbce8d33f72bdecf0800000000000000
+      internalID: -221324547270841156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 24
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d7643dafebe9e0800000000000000
+      internalID: -1590914516157738409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 27
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adab42a2812c8bc0800000000000000
+      internalID: -3779609142318355032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 26
+        width: 186
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34ef68bff8793300800000000000000
+      internalID: 232349895492625470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones-brillantes-coloridos-lindos-68384610-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 29
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056f5398e92720ef0800000000000000
+      internalID: -143426212890020272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
