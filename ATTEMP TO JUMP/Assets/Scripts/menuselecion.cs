@@ -1,10 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
-
 public class menuselecion : MonoBehaviour
 {
     private int index;
@@ -13,21 +6,13 @@ public class menuselecion : MonoBehaviour
 
     private GameManager gameManager;
 
-    private CambiarPantalla()
-    {
-        PlayerPrefs.SetInt("JugadorIndex", index);
-        imagen.sprite = gameManager.personajes[index].imagen;
-        nombre.text = gameManager.personajes[index].nombre;
-    }
-
-
     private void Start()
     {
         gameManager = gameManager.Instance;
 
         index = PlayerPrefs("JugadorIndex");
 
-        if(index > gameManager.personajes.Count - 1)
+        if (index > gameManager.personajes.Count - 1)
         {
             index = 0;
         }
@@ -35,10 +20,17 @@ public class menuselecion : MonoBehaviour
         CambiarPantalla();
     }
 
- 
+    private CambiarPantalla()
+    {
+        PlayerPrefs.SetInt("JugadorIndex", index);
+        imagen.sprite = gameManager.personajes[index].imagen;
+        nombre.text = gameManager.personajes[index].nombre;
+        
+    }
+
     public void siguientePersonaje()
     {
-        if(index == gameManager.personajes.Count - 1)
+        if (index == gameManager.personajes.Count - 1)
         {
             index = 0;
         }
