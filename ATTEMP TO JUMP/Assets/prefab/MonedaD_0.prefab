@@ -142,3 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e941bd4c0a2a042b5f731cf4e32918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valor: 1
+  gameManager: {fileID: 0}
+  coinSFX: {fileID: 8300000, guid: a8e52f693e13d7843ac02dffe2a8f2d2, type: 3}

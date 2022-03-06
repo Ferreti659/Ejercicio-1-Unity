@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46c271948044bc419a54375d7d0ec51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personajes: []
 --- !u!1 &497450350
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +647,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: "Salti\xF1os"
 --- !u!222 &792850852
 CanvasRenderer:
   m_ObjectHideFlags: 0
